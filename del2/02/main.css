@@ -1,0 +1,13 @@
+html{
+	--main-bg-color: grey;
+	--chosen-font-size: var(font-size-normal)
+	--font-size-normal: 1em;
+	--font-size-large: 3em;
+}
+body{
+	margin: 0;
+	font-size: var(--chosen-font-size)
+}
+div {
+	background-color: var(--main-bg-color);
+}

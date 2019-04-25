@@ -1,0 +1,9 @@
+html{
+	--main-bg-color: grey;
+}
+body{
+	margin: 0;
+}
+div {
+	background-color: var(--main-bg-color);
+}

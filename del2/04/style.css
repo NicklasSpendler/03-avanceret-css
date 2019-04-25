@@ -1,0 +1,8 @@
+:root{
+	--bgColor: hsl(248, 81%, 50%);
+}
+.box{
+	height: 100px;
+	width: 100px;
+	background-color: var(--bgColor)
+}

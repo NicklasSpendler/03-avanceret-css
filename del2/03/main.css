@@ -1,0 +1,25 @@
+html{
+
+}
+.control-buttons{
+	display: flex;
+}
+.instance1{
+	height: 100px;
+	width: 100px;
+	margin-right: 1em;
+
+	background-color: blue;
+}
+.instance2{
+	height: 100px;
+	width: 100px;
+	margin-right: 1em;
+	
+	background-color: red;
+}
+.instance3{
+	height: 100px;
+	width: 100px;
+	background-color: yellow;
+}
