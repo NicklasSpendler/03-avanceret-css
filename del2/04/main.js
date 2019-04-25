@@ -7,7 +7,7 @@ let slidersElem = document.querySelector('.sliders')
 let root = document.documentElement;
 
 let allSlidersElems = slidersElem.querySelectorAll('.slider')
-
+//
 let sliderHueValue = 100;
 let sliderSaturationValue = 100;
 let sliderLightnessValue = 50;
