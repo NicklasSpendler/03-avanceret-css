@@ -1,0 +1,12 @@
+body{
+	height: 200vh;
+}
+
+.billede{
+	background: url('../img/jørgen.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 50%;
+	background-position: center;
+}
+

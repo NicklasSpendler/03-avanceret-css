@@ -1,0 +1,55 @@
+.profile{
+	height: 10em;
+	width: 10em;
+	position: relative;
+}
+
+.profile img{
+	height: 100%;
+	width: 100%;
+	border-radius: 100px;
+	object-fit: cover;
+}
+
+.profile__notifications{
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	background-color: green;
+	color: white;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	border-radius: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+
+.profile__notifications p{
+	margin: 0;
+}
+
+.message__header{
+	position: relative;
+	height: 2em;
+	background-color: blue;
+	color: white;
+}
+
+.message__header div{
+	height: 2em;
+	width: 2em;
+	position: absolute;
+	top: 0;
+	left: -2em;
+	background-color: red;
+}
+
+.message__message{
+	background-color: yellow;
+}
+
+.wrapper{
+	padding: 10em;
+}

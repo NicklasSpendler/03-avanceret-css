@@ -1,0 +1,42 @@
+:root{
+	--slider: 0;
+	--maxMovement: 150px;
+	--pos: 50px;
+}
+
+.slider{
+	width: 200px;
+}
+
+.box1{
+	background-color: red;
+	height: 20px;
+	width: 20px;
+	position: fixed;
+	left: calc(var(--slider) * var(--maxMovement) / 100 + var(--pos));
+	top: calc(var(--maxMovement) + var(--pos))
+}
+.box2{
+	background-color: blue;
+	height: 20px;
+	width: 20px;
+	position: fixed;
+	top: calc(var(--maxMovement) + var(--slider) * (var(--maxMovement) / 100) + var(--pos));
+	left: calc(100 * var(--maxMovement) / 100 + var(--pos))
+}
+.box3{
+	background-color: green;
+	height: 20px;
+	width: 20px;
+	position: fixed;
+	left: calc(var(--maxMovement) - (var(--slider) * var(--maxMovement)) / 100 + var(--pos));
+	top: calc(var(--maxMovement) * 2 + var(--pos))
+}
+.box4{
+	background-color: orange;
+	height: 20px;
+	width: 20px;
+	position: fixed;
+	left: calc(var(--maxMovement) / 100 + var(--pos));
+	top: calc((var(--maxMovement) * 2) - (var(--slider) * var(--maxMovement))/ 100 + var(--pos));
+}
