@@ -12,12 +12,9 @@ console.log('', siteArray[currentSite -1]);
 console.log('', getComputedStyle(siteArray[currentSite -1]).getPropertyValue("opacity"));
 navSlectionsArray.forEach(function(selection, index){
 	let link = index + 1
-	
 	selection.addEventListener('click',function(arg,index){
 
 		// console.log('', siteArray[currentSite]);
-		console.log('link: ', link);
-		console.log('currentSite', currentSite);
 		if(link != currentSite){
 			siteArray[currentSite -1].style.opacity = "0"
 			checkOpacity(siteArray[currentSite -1])
@@ -32,7 +29,6 @@ function checkOpacity(site){
 	console.log('', site);
 	site.addEventListener('transitionend', ()=>{
 		if(getComputedStyle(site).getPropertyValue("opacity") == 0){
-			console.log('Det jo meget godt', );
 			updateView();
 		}
 	})
@@ -41,8 +37,8 @@ function checkOpacity(site){
 updateView()
 function updateView(){
 	siteArray.forEach(site => {
-		site.style.display = "none"
-		site.style.opacity = "0"
+		site.style.display = "none";
+		site.style.opacity = "0";
 		if(site.dataset.siteid == currentSite){
 			site.style.display = "block";
 			site.style.opacity = "0"
